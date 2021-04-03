@@ -1,8 +1,16 @@
+
+:root {
+  --color-grey:rgb(200, 190, 190);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* general styles */
 
 *{
   padding: 0;
   margin: 0;
+  font-family:'Roboto', sans-serif;
   box-sizing: border-box;
 }
 
@@ -35,10 +43,65 @@ header{
 }
 
 .cart-container p{
-  color: rgb(200, 190, 190);
+  color: var(--color-grey)
  
 }
 
 
+/* Showcase styles */
 
+.showcase-container{
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  padding: 2rem 0;
+  min-height: calc(100vh - 165px);
 
+}
+
+.showcase-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  
+  
+}
+
+.breadcrumbs-list{
+  display: flex;
+  
+}
+
+.breadcrumbs-list li{
+  list-style: none;
+  padding-left: 1rem;
+
+}
+
+.active-list{
+  color: var(--color-grey)
+}
+
+.showcase-carroussel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 calc( 10vw - 25px - 2rem);
+  flex-grow: 1;
+}
+
+.carroussel-controler{
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-container{
+  margin: 0 2rem;
+  flex-grow: 1;
+}
