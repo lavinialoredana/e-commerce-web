@@ -6,9 +6,9 @@ const CartProduct = () => {
     return (
         <div className="cart-product">
             <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" />
-            <p> Sarten Vintage</p>
+            <h4> Sarten Vintage</h4>
 
-            <h3> € 34,50</h3>
+            <h4> € 34,50</h4>
 
             <FontAwesomeIcon icon={faTrash} />
         </div>

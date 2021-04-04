@@ -14,11 +14,11 @@ const Header = () => {
         </Link>
         
         <Link to="/cartpage"> 
-        <div className="cart-container">
+        <div className="header-cart-container">
                <img src={cart} alt="cart icon" className="cart-icon"/> 
          <div>
                  <p>0.00 €</p>
-                 <h3>Mi Carrito</h3>
+                 <h4>Mi Carrito</h4>
          </div>
         </div>
         </Link>

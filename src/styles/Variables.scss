@@ -1,5 +1,7 @@
 
-$colorGrey: rgb(158, 145, 145); 
+$lightGrey: rgb(219, 215, 215); 
+$darkGrey: rgb(158, 145, 145); 
+$disabledBotton:#7b7b7b;
+$activeButton:#333333;
 $robotoFont:'Roboto', sans-serif;
-$gradientGreyBg: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
-radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%);
+$gradientGreyBg:linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
