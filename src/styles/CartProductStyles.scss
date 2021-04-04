@@ -1,0 +1,14 @@
+.cart-product {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 1.5rem 2rem 2.5rem;
+        border-bottom: 1px solid $lightGrey;
+    
+        .fa-trash {
+            color: $lightGrey;
+        }
+        
+        img {
+            width: 130px;
+        }
+    }
