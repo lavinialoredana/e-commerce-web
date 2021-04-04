@@ -1,0 +1,54 @@
+/* Showcase styles */
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    background-image: $gradientGreyBg;
+    background-blend-mode: screen;
+    padding: 2rem 0;
+    min-height: calc(100vh - 165px);
+}
+
+.showcase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.breadcrumbs-list {
+    display: flex;
+
+    li {
+        list-style: none;
+        padding-left: 1rem;
+    }
+}
+
+.active-list {
+    color: $colorGrey;
+}
+
+.showcase-carroussel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 calc(10vw - 25px - 2rem);
+    flex-grow: 1;
+}
+
+.carroussel-controler {
+    min-width: 25px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-container {
+    margin: 0 2rem;
+    display: flex;
+    flex-grow: 1;
+}

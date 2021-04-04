@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/App.scss";
 import {BrowserRouter, Route, Link} from "react-router-dom";
 import CartPage from "./CartPage";
 import Header from "./Header";
