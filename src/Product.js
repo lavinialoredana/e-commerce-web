@@ -24,10 +24,10 @@ const Product = () => {
 
                 <div className="product-buttons">
                     <div>
-                        <img src={eye} alt="eye" />
+                        <img src={cart} alt="cart" />
                     </div>
                     <div>
-                        <img src={cart} alt="cart" />
+                        <img src={eye} alt="eye" />
                     </div>
                 </div>
             </div>
