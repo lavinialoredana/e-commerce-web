@@ -1,4 +1,5 @@
 import React from "react";
+import Product from "./Product";
 
 const Showcase = () => {
     return (
@@ -19,7 +20,10 @@ const Showcase = () => {
                 <div className="carroussel-controler"> &lt; </div>
 
                 <div className="products-container">
-                    <h1> Products Container</h1>
+                    <Product />
+                    <Product />
+                    <Product />
+                    <Product />
                 </div>
 
                 <div className="carroussel-controler"> &gt; </div>
