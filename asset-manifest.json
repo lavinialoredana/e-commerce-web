@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/e-commerce-web/static/css/main.a17850ae.chunk.css",
+    "main.js": "/e-commerce-web/static/js/main.ea027a74.chunk.js",
+    "main.js.map": "/e-commerce-web/static/js/main.ea027a74.chunk.js.map",
+    "runtime-main.js": "/e-commerce-web/static/js/runtime-main.873af1d7.js",
+    "runtime-main.js.map": "/e-commerce-web/static/js/runtime-main.873af1d7.js.map",
+    "static/js/2.df147c38.chunk.js": "/e-commerce-web/static/js/2.df147c38.chunk.js",
+    "static/js/2.df147c38.chunk.js.map": "/e-commerce-web/static/js/2.df147c38.chunk.js.map",
+    "index.html": "/e-commerce-web/index.html",
+    "static/css/main.a17850ae.chunk.css.map": "/e-commerce-web/static/css/main.a17850ae.chunk.css.map",
+    "static/js/2.df147c38.chunk.js.LICENSE.txt": "/e-commerce-web/static/js/2.df147c38.chunk.js.LICENSE.txt",
+    "static/media/carrito.943dcbe8.svg": "/e-commerce-web/static/media/carrito.943dcbe8.svg",
+    "static/media/estrella.db703d11.svg": "/e-commerce-web/static/media/estrella.db703d11.svg",
+    "static/media/ojo.b7cd8379.svg": "/e-commerce-web/static/media/ojo.b7cd8379.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.873af1d7.js",
+    "static/js/2.df147c38.chunk.js",
+    "static/css/main.a17850ae.chunk.css",
+    "static/js/main.ea027a74.chunk.js"
+  ]
+}
