@@ -2,15 +2,28 @@ import React from "react";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const CartProduct = () => {
+const CartProduct = ({image, title, price, id, deleteItem, cartDetails}) => {
+
+   const removeItem = () => {
+    const newCartArray = [...cartDetails];
+
+     const indexCartProduct = newCartArray.findIndex((cartProduct) => { 
+         if(cartProduct.productId === id) return true;
+        }
+         )
+    newCartArray.splice(indexCartProduct, 1);
+    
+    deleteItem(newCartArray);
+   }
+
     return (
         <div className="cart-product">
-            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="" />
-            <h4> Sarten Vintage</h4>
+            <img src={image} alt="" />
+            <h4> {title}</h4>
 
-            <h4> € 34,50</h4>
+            <h4> € {price}</h4>
 
-            <FontAwesomeIcon icon={faTrash} />
+            <FontAwesomeIcon onClick ={removeItem} icon={faTrash} />
         </div>
     );
 };

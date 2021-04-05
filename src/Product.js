@@ -3,28 +3,43 @@ import star from "./images/estrella.svg";
 import eye from "./images/ojo.svg";
 import cart from "./images/carrito.svg";
 
-const Product = () => {
+const Product = ({productId ,image, title, price, valoration, discount, addItem, cartDetails}) => {
+
+    const starArray = [... new Array(valoration)];
+    const fullPrice = (price / (1 - (discount / 100))).toFixed(2);
+
+    const addToCart = () => {
+        
+      const cartArray = [...cartDetails];
+      cartArray.push({productId, 
+        image,
+        title,
+        price})
+        
+        addItem(cartArray)
+    }
+
     return (
         <div className="product">
             <div className="pic-valoration">
                 <img
-                    src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                    src={image}
                     alt="product"
                 />
 
                 <div className="valoration-container">
                     <div className="star-container">
-                        <img src={star} alt="" />
-                        <img src={star} alt="" />
-                        <img src={star} alt="" />
+                        {
+                        starArray.map( e => <img src={star} alt="" />)
+                        }
                     </div>
-
-                    <div className="discount"> -7% </div>
+                    
+                     { discount ? <div className="discount"> -{discount}%</div> : null}
                 </div>
 
                 <div className="product-buttons">
                     <div>
-                        <img src={cart} alt="cart" />
+                        <img onClick = {addToCart}  src={cart} alt="cart" />
                     </div>
                     <div>
                         <img src={eye} alt="eye" />
@@ -32,10 +47,9 @@ const Product = () => {
                 </div>
             </div>
 
-            <p> Herrvidor de te </p>
-            <h3>
-                {" "}
-                12 € <span className="previous-price"> 15 €</span>
+            <p> {title} </p>
+            <h3> {price} € 
+            {discount ?  <span className="previous-price"> {fullPrice } €</span> : null }
             </h3>
         </div>
     );
